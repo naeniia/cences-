@@ -1,0 +1,448 @@
+/* overall */
+#content {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "qs"
+                       "servicios"
+                       "personal"
+                       "contacto";
+
+
+  font-family: 'Asap Condensed', sans-serif;
+}
+
+#content p {
+  font-weight: 500;
+}
+
+/* navbar */
+.navbar {
+  background-color: #6699ff; 
+  font-family: 'Asap Condensed', sans-serif;
+}
+
+.logo {
+  width: 65px;
+  height: 55px;
+  margin-top: 9px;
+  margin-left: 4px;
+}
+
+.circle {
+  margin-left: 90px;
+  margin-right: 7px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 13.5px;
+}
+
+.navbar .navbar-brand:hover {
+  color: #99cc66;
+}
+
+.navbar .navbar-brand:focus {
+  color: #fff;
+}
+
+
+#group .active.active.active{
+  margin-left: 480px;
+  color: #99cc66;
+}
+
+#group .nav-link {
+  font-weight: 500;
+  color: #fff;
+}
+
+#group .nav-link:hover {
+  color: #99cc66;
+}
+
+/* QS */
+
+#QS {
+ grid-area: qs;
+ margin: 40px 0 40px 0;
+}
+
+.main-img {
+  width: 563px;
+  float: left;
+  margin: 20px 40px 0px 100px;
+  border-radius: 0 90px 0 90px;
+}
+
+#QS .text {
+  margin: 150px 100px 0 0;  
+}
+
+.text h1 {
+  color: #6699ff;
+  font-size: 70px;
+  font-weight: 900;
+}
+
+.text span {
+  letter-spacing: 3px;
+}
+
+.text p {
+  color: #999999;
+}
+
+/* servicios */
+#servicios {
+    grid-area: servicios;
+    text-align: center;
+    background-color: #ff6699;
+    
+
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+    grid-template-areas: "first second"
+                         "third fourth"
+                         "fifth fifth";
+}
+
+.serv .serv-img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.serv .programas {
+  color: #ff0066;
+  font-weight: 700;
+}
+
+.serv .line{
+  margin: -3px auto 16px auto;
+  width: 350px;
+  border-top: 1px solid;
+  border-color: #ff0066;
+}
+
+.details p {
+  color: #fff;
+  margin-bottom: 7px;
+}
+
+.details p .arrow{
+  color: #fff;
+  font-size: medium;
+  margin-top: -5px;
+}
+
+.details p:hover {
+  text-shadow: 2px 2px 4px #999999;
+}
+
+.first {
+  grid-area: first;
+  margin-top: 25px;
+}
+
+.second {
+    grid-area: second;    
+    margin-top: 25px; 
+}
+ 
+.third {
+   grid-area: third;
+}
+
+.fourth {
+    grid-area: fourth;     
+}
+ 
+.fifth {
+   grid-area: fifth;
+   margin-bottom: 25px;
+}
+
+/* .vl {
+  border-left: 2px solid green;
+  height: 100px;
+  position: absolute;
+  left: 500px;
+  margin-left: -3px;
+  top: 0;
+} */
+
+/* personal */
+
+#personal {
+  grid-area: personal;
+  margin: 50px auto;  
+}
+
+.pinfo {
+   display: flex; 
+   gap: 150px;
+}
+
+.info {
+   width: 350px;
+   height: 250px;
+   padding: 18px;
+   
+   text-align: center;
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.pinfo h4 {
+  margin-top: 3px;
+  margin-bottom: 0px;
+  color: #6699ff;
+  font-weight: 700;
+}
+
+.pinfo .ptitle {
+  color: #ff6699;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.pinfo p {
+  color: #999999 ;
+  margin: 0px;
+}
+ 
+/* contacto */
+
+#contacto {
+ grid-area: contacto; 
+ /* width: 1366px; */
+ padding: 25px;
+ display: flex;   
+ gap: 30px;
+
+ background-color: #99cc66;
+}
+
+.cnts {
+  display: flex;   
+  gap: 30px;
+  margin: auto;
+}
+
+.icon {
+  margin-top: -2.5px;
+
+  color: #ff6699;
+}
+
+.cnt a {
+  margin-left: 4px;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.cnt a:hover {
+  color: #ff6699;
+}
+
+@media (max-width: 681px) {
+  /* .navbar */
+  .circle {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 25px;
+    margin-right: 0;
+    text-align: center;
+    line-height: 23px;
+  }
+
+  #group .active.active.active{
+    margin-left: 0;
+  }
+  
+  /* content */
+
+  #QS {
+    margin: 45px auto 25px auto;
+  }
+  
+  .main-img{
+    width: 450px;
+    float: none;
+    margin: 0 0 0 14px;
+  }
+
+  #QS .text {
+    width: 450px;
+    font-size: 17px;
+    margin: 10px auto 0 auto;
+    padding: 0 0px 0 0px;
+    text-align: center;
+  }
+  
+  .text h1 {
+    font-size: 65px;
+  }
+  
+  .text p {
+    margin-bottom: 0;
+  }
+
+  /* servicios */
+  #servicios {
+    padding: 0 0 0 0;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "first"
+                         "second"
+                         "third"
+                         "fourth"
+                         "fifth";
+  }
+
+  .second {
+    margin-top: 0;
+  }
+
+  /* personal */
+  #personal {
+    margin: 25px auto;
+  }
+
+  .info {
+    width: 370px;
+  }
+
+  .pinfo {
+    display: grid; 
+    gap: 20px;
+ }
+
+  /* contacto */
+  #contacto {
+    padding: 22px;
+  }
+
+  .cnts {
+    display: grid;
+    grid-template-areas: "phone ig"
+                         "email dir";
+    gap: 20px;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+  /* .navbar */
+  .circle {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 17px;
+    margin-right: 0;
+    text-align: center;
+    line-height: 17px;
+  }
+
+  #group .active.active.active{
+    margin-left: 0;
+  }
+  
+  /* content */
+
+  #QS {
+    margin: 45px auto 25px auto;
+  }
+  
+  .main-img{
+    width: 300px;
+    float: none;
+    margin: 0 0 0 14px;
+  }
+
+  #QS .text {
+    width: 340px;
+    font-size: 15px;
+    margin: 10px auto 0 auto;
+    padding: 0 0px 0 0px;
+    text-align: center;
+  }
+  
+  .text h1 {
+    font-size: 55px;
+  }
+  
+  .text p {
+    margin-bottom: 0;
+  }
+
+  /* servicios */
+  #servicios {
+    padding: 0 0 0 0;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "first"
+                         "second"
+                         "third"
+                         "fourth"
+                         "fifth";
+  }
+
+  .second {
+    margin-top: 0;
+  }
+
+  /* personal */
+  #personal {
+    margin: 25px auto;
+  }
+
+  .info {
+    width: 300px;
+  }
+
+  .pinfo {
+    display: grid; 
+    gap: 20px;
+ }
+
+  /* contacto */
+  #contacto {
+    padding: 22px;
+  }
+
+  .cnts {
+    display: grid;
+    grid-template-areas: "phone ig"
+                         "email dir";
+    gap: 20px;
+    margin: auto;
+    text-align: center;
+  }
+}

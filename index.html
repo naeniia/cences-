@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/67a9cc1850.js" crossorigin="anonymous"></script>
+    <link type="image/png" sizes="16x16" rel="icon" href="./images/icons8-nutrition-32.png">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>CENCES</title>
+  </head>
+  <body>
+    <div class="App">
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+         <div class="circle">
+          <img src="images/logo.png" alt="logo" class="logo"></img> 
+         </div>
+         <a class="navbar-brand" href="#">Centro de Especialistas en <br></br> Nutrición del Cesar</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+           <div class="navbar-nav navgroup" id="group">
+             <a class="nav-link active" aria-current="page" href="#QS">¿Quienes Somos?</a>
+             <a class="nav-link" href="#servicios">Servicios</a>
+             <a class="nav-link" href="#personal">Nuestro Equipo</a>
+             <a class="nav-link" href="#contacto">Contacto</a>
+           </div>
+         </div>
+       </div>
+     </nav>
+
+     <div id="content">
+      <section class="about" id="QS">
+         <img src="images/main-img.jpeg"
+         alt="logo" class="main-img"></img> 
+         <div class="text">
+          <h1>Somos <span>CENCES</span></h1>
+          <p>Somos una empresa que promueve la alimentación balanceada a través de acciones relacionadas con la salud y nutrición del ser humano, desde su entorno individual, poblacional e institucional.</p>
+         </div>
+      </section>
+
+      <section class="services width" id="servicios">
+       <div class="serv first">
+          <img src="images/school-img.jpeg" alt="img-first" class="serv-img"></img>
+          <h3 class="programas">Programa en jardines e instituciones educativas</h3>
+          <hr class="line"></hr>
+           <div class="details">
+              <p><NavigateNextIcon class="arrow"/>Ejecución de proyectos</p>
+              <p><NavigateNextIcon class="arrow"/>Jornadas de tamizaje y diagnóstico nutricional</p>
+              <p><NavigateNextIcon class="arrow"/>Prevención de la desnutrición y Transtornos de la conducta alimentaria</p>
+              <p><NavigateNextIcon class="arrow"/>Capacitaciones en alimentación, nutrición y enfermedades prevalente en la infancia</p>
+           </div>
+       </div>
+       <div class="serv second">
+           <img src="images/company-img.jpeg" alt="img-second" class="serv-img"></img>
+           <h3 class="programas">Programas empresariales</h3>
+           <hr class="line"></hr>
+           <div class="details">
+              <p><NavigateNextIcon class="arrow"/>Jornadas de actividad física</p>
+              <p><NavigateNextIcon class="arrow"/>Jornadas de tamizaje y diagnóstico nutricional</p>
+              <p><NavigateNextIcon class="arrow"/>Ejecución de proyectos en torno a la nutrición y alimentación</p>
+              <p><NavigateNextIcon class="arrow"/>Capacitaciones y talleres en temas encaminados a la salud ocupacional</p>
+           </div>
+       </div>
+       <div class="serv third">
+          <img src="images/old-img.jpeg" alt="img-third" class="serv-img"></img>
+          <h3 class="programas">Programa en hogar geriátrico</h3>
+          <hr class="line"></hr>
+           <div class="details">
+              <p><NavigateNextIcon class="arrow"/>Realización y seguimiento a minutas</p>
+              <p><NavigateNextIcon class="arrow"/>Capacitación y talleres en alimentación y nutrición</p>
+           </div>
+       </div>
+       <div class="serv fourth">
+       <img src="images/prg-img.jpeg" alt="img-fourth" class="serv-img"></img>
+       <h3 class="programas">Programa en gestantes y lactancia materna</h3>
+       <hr class="line"></hr>
+           <div class="details">
+              <p><NavigateNextIcon class="arrow"/>Jornadas de tamizaje y diagnóstico nutricional</p>
+              <p><NavigateNextIcon class="arrow"/>Capacitaciones y talleres en lactancia materna y alimentación complementaria</p>
+              <p><NavigateNextIcon class="arrow"/>Capacitaciones en temas relacionados a la alimentación y nutrición en gestantes y lactantes</p>
+           </div>
+       </div>
+       <div class="serv fifth">
+          <img src="images/nutri-img.jpeg" alt="img-fifth" class="serv-img"></img>
+          <h3 class="programas">Asesoría nutricional</h3>
+          <hr class="line"></hr>
+           <div class="details">
+              <p class="solo"><NavigateNextIcon class="arrow"/>Te guiamos hacía nutricionistas habilitadas por el ministerio de salud, para atender las diferentes patologías presentadas e incluso si deseas empezar a cambiar tus hábitos alimentarios.</p>
+           </div>
+       </div>
+
+      </section>
+      <section class="people width" id="personal">
+        <div class="pinfo">
+          <div class="yarima info">
+            <img src="images/IMG_8497.jpg" alt="yarima" class="profile-pic"></img>
+            <h4>Yarima C. Navarro O.</h4>
+            <p class="ptitle">Nutricionista Dietista</p>
+            <p>Esp. En Epidemiología</p>
+            <p>Magíster en Salud Pública</p>
+          </div>
+          <div class="maria info">
+            <img src="images/IMG_8358.jpg" alt="maria" class="profile-pic"></img>
+            <h4>María P. Molina R.</h4>
+            <p class="ptitle">Nutricionista Dietista</p>
+            <p>Esp. En administración de proyectos</p>
+            <p>Magíster TIC en Salud</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact width" id="contacto">
+       <div class="cnts">
+         <div class="cnt">
+          <i class="fa-solid fa-phone fa-lg icon"></i>
+          <a href="https://api.whatsapp.com/message/TEBZ7LXVY6W5D1?autoload=1&app_absent=0">313 6194805</a>
+         </div>
+         <div class="cnt">
+          <i class="fa-brands fa-instagram fa-lg icon"></i>
+          <a href="https://www.instagram.com/cences_cesar/">@cences_cesar</a>
+         </div> 
+         <div class="cnt">
+          <i class="fa-solid fa-envelope fa-lg icon"></i>
+          <a href="mailto:cences22@gmail.co">cences22@gmail.co</a>
+         </div>
+         <div class="cnt">
+          <i class="fa-solid fa-location-dot fa-lg icon location"></i>
+          <a href="https://goo.gl/maps/tiFc2BfCx85TbhkU9">Calle 13C #13A-18 Barrio:  Obrero</a>
+         </div> 
+       </div>
+      </section>
+     </div> 
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
